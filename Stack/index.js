@@ -51,3 +51,59 @@
 // console.log("Top element is : " + peek());
 // console.log("Elements present in stack : ");
 // print()
+
+
+
+
+
+let root;
+
+class StackNode {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+function isEmpty() {
+    if (root == null) {
+        return true;
+    } else {
+        return false;
+    }
+}
+function push(data) {
+    let newNode = new StackNode(data);
+
+    if (root == null) {
+        root = newNode;
+    } else {
+        let temp = root;
+        root = newNode;
+        newNode.next = temp;
+    }
+    console.log(data + " Pushed to Stack");
+}
+function pop() {
+    let popped = Number.MIN_VALUE;
+    if (root == null) {
+        console.log("Stack is Empty");
+    } else {
+        popped = root.data;
+        root = root.next;
+    }
+    return popped;
+}
+function peek() {
+    if (root == null) {
+        console.log("Stack is Empty");
+        return Number.MIN_VALUE;
+    } else {
+        return root.data;
+    }
+}
+push(50);
+push(60);
+push(70);
+push(80);
+console.log(pop() + " popped from stack");
+console.log("top element is " + peek());
