@@ -1,7 +1,7 @@
 
-var t = -1;
-var MAX = 1000;
-var a = Array(MAX).fill(0); // Maximum size of Stack
+let t = -1;
+let MAX = 1000;
+let a = Array(MAX).fill(0); // Maximum size of Stack
 
 function isEmpty() {
     return (t < 0);
