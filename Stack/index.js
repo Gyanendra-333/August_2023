@@ -93,6 +93,7 @@ function pop() {
     }
     return popped;
 }
+
 function peek() {
     if (root == null) {
         console.log("Stack is Empty");
@@ -101,6 +102,7 @@ function peek() {
         return root.data;
     }
 }
+
 push(50);
 push(60);
 push(70);
