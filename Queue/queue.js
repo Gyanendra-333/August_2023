@@ -24,7 +24,7 @@ class Queue {
         // on empty queue
 
         if (this.isEmpty())
-            return "Underflow<br>";
+            return "Underflow";
         return this.items.shift();
     }
     front() {
@@ -62,8 +62,10 @@ console.log(queue.dequeue() + " dequeued from queue");
 
 // queue contains [20, 30, 40]
 // Front is now 20
+
 console.log("Front item is " + queue.front() + "");
 
 // printing the rear element
 // Rear is 40
+
 console.log("Rear item is " + queue.rear() + "");
