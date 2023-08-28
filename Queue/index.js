@@ -35,6 +35,6 @@ queue.enqueue(18);
 
 console.log(queue.dequeue() + " dequeue from queue");
 
-console.log("Front item is " + queue.front() + " ");
+console.log("Front item is : " + queue.front() + " ");
 
 console.log("Rear item is " + queue.rear() + " ");
