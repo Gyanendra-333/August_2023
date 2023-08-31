@@ -103,7 +103,7 @@ function insert(node, key) {
 function inorder(root) {
     if (root != null) {
         inorder(root.left);
-        document.write(root.key + " ");
+        console.log(root.key + " ");
         inorder(root.right);
     }
 }
