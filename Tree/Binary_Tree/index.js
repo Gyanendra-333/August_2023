@@ -78,7 +78,6 @@ class Node {
 
 }
 
-
 // Function to insert a new node with
 // given key in BST
 function insert(node, key) {
